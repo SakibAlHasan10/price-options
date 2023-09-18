@@ -3,7 +3,7 @@ const Link = ({route}) => {
     return (
         <div>
             {/* <AiOutlineMenu></AiOutlineMenu> */}
-            <li className="mr-10"><a href={route.path}>{route.name}</a></li>
+            <li className="mr-10 hover:bg-slate-300 px-3"><a href={route.path}>{route.name}</a></li>
         </div>
     );
 };

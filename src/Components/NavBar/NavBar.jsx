@@ -12,15 +12,17 @@ const NavBar = () => {
         { id: 5, path: '/dashboard', name: 'Dashboard' },
       ];
     return (
-        <div>
+        <div className="max-w-screen-xl mx-auto">
             <div onClick={()=>setOpen(!open)} className="md:hidden text-2xl">
                 {
                 open === true ? 
                 <AiOutlineClose/> 
-                : <AiOutlineMenu className=" "></AiOutlineMenu>
+                : <AiOutlineMenu/>
                 }
             </div>
-           <ul className="md:flex hidden md:visible">
+           <ul className={`md:flex duration-1000
+           ${open ? 'top-6' : '-top-60'}
+           absolute md:static bg-orange-400 p-6`}>
             {
                 routes.map(route => <Link key={route.id} route={route}></Link>)
             }
