@@ -1,4 +1,4 @@
-import { LineChart as LChart, Line, XAxis, YAxis } from 'recharts';
+import { LineChart as LChart, Line, Tooltip, XAxis, YAxis } from 'recharts';
 const Linechart = () => {
     const students = [
         {"id": 1, "name": "Student 1", "math_mark": 85, "physics_mark": 75, "biology_mark": 90},
@@ -20,6 +20,7 @@ const Linechart = () => {
                 <Line dataKey='math_mark' stroke='red'></Line>
                 <Line dataKey="physics_mark" stroke='green'></Line>
                 <Line dataKey="biology_mark" stroke='blue'></Line>
+                <Tooltip></Tooltip>
             </LChart>
         </div>
     );

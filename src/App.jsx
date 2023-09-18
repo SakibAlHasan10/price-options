@@ -2,6 +2,7 @@
 import './App.css'
 import Linechart from './Components/LineChart/Linechart'
 import NavBar from './Components/NavBar/NavBar'
+import Phones from './Components/Phones/Phones'
 import PriceOptions from './Components/PriceOptions/PriceOptions'
 // import DaisyNav from './Components/DaisyNav/DaisyNav'
 
@@ -16,6 +17,7 @@ function App() {
       {/* <button className="btn btn-accent mx-auto">Accent</button> */}
       <PriceOptions></PriceOptions>
       <Linechart></Linechart>
+      <Phones></Phones>
     </>
   )
 }
